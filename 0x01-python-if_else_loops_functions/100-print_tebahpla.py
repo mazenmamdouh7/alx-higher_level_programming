@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
-    print("{:s}".format(chr(i) if i % 2 == 0 else chr(i - 32)), end="")
+x = 0
+for char in range(ord("z"), ord("a"), -1):
+    print("{}".format(chr(char - x)), end="")
+    x = 32
