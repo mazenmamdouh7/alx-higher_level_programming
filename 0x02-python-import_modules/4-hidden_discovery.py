@@ -6,3 +6,4 @@ if __name__ == "__main__":
     while char <= dir(hidden_4):
         if char[:2] != "__":
             print(char)
+        char += 1
