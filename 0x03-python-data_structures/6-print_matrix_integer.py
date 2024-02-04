@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(my_list=[]):
-    if my_list is None:
-        print("", end="")
-    else:
-        my_list.reverse()
-        for i in my_list:
-            print("{:d}".format(i))
+def print_matrix_integer(matrix=[[]]):
+    for row in matrix:
+        count = 0
+        for elem in row:
+            count += 1
+            print('{:d}'.format(elem), end=(" " if count < len(row) else ""))
+        print()
