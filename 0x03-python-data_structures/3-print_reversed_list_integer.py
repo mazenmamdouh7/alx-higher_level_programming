@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(my_list=[]):
-    if my_list is None:
-        print("", end="")
+def print_matrix_integer(matrix=[[]]):
+    if len(matrix) == 1 and len(matrix[0]) == 0:
+        print("")
     else:
-        my_list.reverse()
-        for i in my_list:
-            print("{:d}".format(i))
+       for i in matrix:
+        for j in i:
+            if j != i[-1]:
+                print("{:d}".format(j), end=" ")
+            else:
+                print("{:d}".format(j))
