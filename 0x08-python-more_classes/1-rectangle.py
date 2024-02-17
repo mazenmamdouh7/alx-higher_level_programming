@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Defines class Rectangle  (based on 0-rectangle.py)"""
+
+
 class Rectangle:
     """Class that defines properties of rectangle.
 
