@@ -2,6 +2,5 @@
 """Define an empty class Rectangle"""
 
 class Rectangle:
-    """Class that define a properties of 
-    rectangle"""
+"""Class that define a properties of rectangle"""
     pass
