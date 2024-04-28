@@ -82,3 +82,5 @@ class Rectangle:
         
         for i in range(self.__height):
             print("#"* (self.__width))
+            if i != self.__height - 1:
+                rect.append("\n")
