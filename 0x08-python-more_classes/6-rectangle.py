@@ -3,7 +3,11 @@
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Represent a rectangle.
+       
+       Args:
+          number_of_instances(int): The number of Rectangle instance.
+    """
 
     number_of_instances = 0
 
@@ -98,6 +102,6 @@ class Rectangle:
         return f"Rectangle({self._width}, {self._height})"
 
     def _del_(self):
-        """print a message after deleting a rectangle object."""
+        """print a message after deleting a rectangle object and update the number of instance."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
