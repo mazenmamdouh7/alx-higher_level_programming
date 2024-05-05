@@ -5,4 +5,4 @@ def read_file(filename=""):
             data = file.read()
             print(data)
     except FileNotFoundError:
-        print("file {} doesn't exist".format(filename))
+        print("file doesn't exist")
