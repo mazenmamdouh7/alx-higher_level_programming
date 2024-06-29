@@ -6,20 +6,22 @@ import module:
 >>> add_integer = _import_('0-add_integer').add_integer
 
 Test one integers:
-	>>> add_integer(2)
-	100
+>>> add_integer(2)
+100
 Test a and b are integers:
-	>>> add_integer(1, 99)
-	100
+>>> add_integer(1, 99)
+100
 Test a and b are floats:
-	>>> add_integer(2.5, 2.5)
-	5
+>>> add_integer(2.5, 2.5)
+5
 Test a is flaot:
-	>>> add_integer(2.5)
-	100
+>>> add_integer(2.5)
+100
 Test a is string:
-	>>> add_integer("m")
-	TypeError: a must be an integer
+>>> add_integer("m")
+Traceback (most recent call last):
+TypeError: a must be an integer
 Test b is string:
-	>>> add_integer(2, "z")
-	TypeError: b must be an integer
+>>> add_integer(2, "z")
+Traceback (most recent call last):
+TypeError: b must be an integer
