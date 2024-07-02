@@ -3,6 +3,8 @@
 from models.base import Base
 
 class Rectangle(Base):
+    """A Rectangle class."""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
@@ -12,6 +14,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """width of the rectangle"""
         return self.__width
 
     @width.setter
@@ -22,6 +25,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """height of the rectangle"""
         return self.__height
 
     @height.setter
@@ -32,6 +36,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """x of the rectangle"""
         return self.__x
 
     @x.setter
@@ -42,6 +47,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """y of the rectangle"""
         return self.__y
 
     @y.setter
