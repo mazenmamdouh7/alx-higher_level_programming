@@ -4,14 +4,23 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """A square class."""
     def __init__(self, size, x=0, y=0, id=None):
-        """Constructor."""
+        """constructor."""
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """method that return
+        """method should return
         [Square] (<id>) <x>/<y> - <size>
         """
         return ("""[Square] ({}) {}/{} - {}"""
-                .format(self.id, self.x, self.y, self.height))
+                .format(self.id, self.x, self.y, self.width))
+
+    @property
+    def size(self):
+        """Size of this square"""
+        return self.width, self.height
+
+    @size.setter
+    def size(self, value):
+        self.width = value
+        self.height = value
