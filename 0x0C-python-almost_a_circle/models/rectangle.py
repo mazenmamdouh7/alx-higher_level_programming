@@ -80,5 +80,6 @@ class Rectangle(Base):
         """method so that it returns [Rectangle]
         (<id>) <x>/<y> - <width>/<height>
         """
-        return f"[Rectangle]({self.id})
-        {self.x}/{self.y} - {self.width}/{self.height}"
+        return f("""
+        [Rectangle]({}) {}/{} - {}/{}
+        """.format(self.id, self.x, self.y, self.width, self.height))
