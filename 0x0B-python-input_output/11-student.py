@@ -26,7 +26,7 @@ class Student:
         Args:
             attrs (list): (Optional) The attributes to represent.
         """
-        if (isinstance(attrs, list) and 
+        if (isinstance(attrs, list) and
                 all(isinstance(attr, str) for attr in attrs)):
             return {key: value for key, value in self.__dict__.items()
                     if key in attrs}
