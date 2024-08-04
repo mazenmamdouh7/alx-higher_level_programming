@@ -2,5 +2,5 @@
 -- Records are ordered by descending score.
 SELECT `score`, `name`
 FROM `second_table`
-WHERE `name` != ""
+WHERE `name` Is Not NULL
 ORDER BY `score` DESC
